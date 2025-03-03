@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,7 +66,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				highlight: {
-					DEFAULT: '#ffff00', // bright yellow for the highlight
+					DEFAULT: '#FEF08A', // Changed to a more visible yellow (yellow-200)
 				}
 			},
 			borderRadius: {

@@ -10,17 +10,19 @@ const Highlight = ({ children }: HighlightProps) => {
   const bgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Apply the highlight effect immediately rather than waiting for intersection
+    // Make sure the highlight background is visible
     if (bgRef.current) {
       bgRef.current.style.transform = "scaleX(1)";
+      bgRef.current.style.opacity = "1";
     }
   }, []);
 
   return (
-    <div ref={containerRef} className="highlight relative inline-block p-1">
+    <div ref={containerRef} className="highlight relative inline-block px-1 py-0.5">
       <div
         ref={bgRef}
         className="highlight-bg"
+        style={{ backgroundColor: "#FEF08A" }} // Explicit yellow color
       ></div>
       <span className="relative z-10">{children}</span>
     </div>

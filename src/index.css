@@ -76,7 +76,7 @@
   }
 
   .highlight-bg {
-    @apply bg-highlight absolute inset-0 transform;
+    @apply absolute inset-0 bg-yellow-200 transform origin-left;
     z-index: -1;
   }
 }
