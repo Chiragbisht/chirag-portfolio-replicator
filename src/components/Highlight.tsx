@@ -22,7 +22,11 @@ const Highlight = ({ children }: HighlightProps) => {
       <div
         ref={bgRef}
         className="highlight-bg"
-        style={{ backgroundColor: "#FEF08A" }} // Explicit yellow color
+        style={{ 
+          backgroundColor: "#FEF08A", // Explicit yellow color
+          width: "100%",
+          height: "100%"
+        }}
       ></div>
       <span className="relative z-10">{children}</span>
     </div>
