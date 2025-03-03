@@ -65,17 +65,6 @@ const Index = () => {
             chiragbisht2003@gmail.com
           </a>
         </div>
-        <div className="mt-2 text-xs text-gray-400">
-          <span>Hugo and </span>
-          <a 
-            href="https://hello-friend.netlify.com/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="hover:underline"
-          >
-            hello-friend
-          </a>
-        </div>
       </footer>
     </div>
   );

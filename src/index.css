@@ -70,13 +70,13 @@
     @apply w-full;
   }
 
-  /* Highlight animation */
+  /* Highlight styling */
   .highlight {
     @apply relative inline-block;
   }
 
   .highlight-bg {
-    @apply bg-highlight absolute inset-0 transform transition-all duration-300;
+    @apply bg-highlight absolute inset-0 transform;
     z-index: -1;
   }
 }
