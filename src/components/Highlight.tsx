@@ -1,29 +1,17 @@
 
-import { useEffect, useRef } from "react";
+import React from "react";
 
 interface HighlightProps {
   children: React.ReactNode;
 }
 
 const Highlight = ({ children }: HighlightProps) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const bgRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Make sure the highlight background is visible
-    if (bgRef.current) {
-      bgRef.current.style.transform = "scaleX(1)";
-      bgRef.current.style.opacity = "1";
-    }
-  }, []);
-
   return (
-    <div ref={containerRef} className="highlight relative inline-block px-1 py-0.5">
+    <div className="highlight relative inline-block px-1 py-0.5">
       <div
-        ref={bgRef}
-        className="highlight-bg"
+        className="absolute inset-0 bg-yellow-200 z-0"
         style={{ 
-          backgroundColor: "#FEF08A", // Explicit yellow color
+          backgroundColor: "#FEF08A",
           width: "100%",
           height: "100%"
         }}
