@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -20,13 +19,13 @@ const NavBar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8">
-          <Link 
+           <Link 
             to="/commonplace" 
             className={`nav-link text-sm ${isActive('/commonplace') ? 'font-bold' : ''}`}
           >
-            Commonplace Book
+            Hobbies
           </Link>
-          <Link 
+          {/* <Link 
             to="/posts" 
             className={`nav-link text-sm ${isActive('/posts') ? 'font-bold' : ''}`}
           >
@@ -43,7 +42,7 @@ const NavBar = () => {
             className={`nav-link text-sm ${isActive('/questions') ? 'font-bold' : ''}`}
           >
             Questions
-          </Link>
+          </Link> */}
         </div>
         
         {/* Mobile Menu Button */}
@@ -65,8 +64,9 @@ const NavBar = () => {
               className={`nav-link text-sm ${isActive('/commonplace') ? 'font-bold' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Commonplace Book
+              Hobbies
             </Link>
+            {/* Remove these links from mobile menu as well
             <Link 
               to="/posts" 
               className={`nav-link text-sm ${isActive('/posts') ? 'font-bold' : ''}`}
@@ -87,7 +87,7 @@ const NavBar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Questions
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

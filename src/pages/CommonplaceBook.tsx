@@ -7,9 +7,11 @@ const CommonplaceBook = () => {
       <NavBar />
 
       <main className="flex-1 w-full max-w-5xl animate-fade-in">
-        <h1 className="text-3xl font-bold mb-6">Commonplace Book</h1>
-        <p className="text-lg">A collection of ideas, quotes, and thoughts that I've found interesting.</p>
-        <p className="mt-4">This page is currently under construction.</p>
+        
+        <p className="text-lg">Watching UFC</p>
+        <p className="text-lg">Professional Gamer</p>
+        <p className="text-lg">Long dist runner</p>
+        <p className="text-lg">Trekking/Hiking</p>
       </main>
     </div>
   );

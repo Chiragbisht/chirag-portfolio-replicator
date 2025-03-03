@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
 import NavBar from "@/components/NavBar";

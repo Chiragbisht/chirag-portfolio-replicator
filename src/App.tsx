@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,9 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import CommonplaceBook from "./pages/CommonplaceBook";
 import Posts from "./pages/Posts";
-import Principles from "./pages/Principles";
 import Questions from "./pages/Questions";
 import NotFound from "./pages/NotFound";
+import NavBar from './components/NavBar';
 
 const queryClient = new QueryClient();
 
@@ -23,7 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/commonplace" element={<CommonplaceBook />} />
           <Route path="/posts" element={<Posts />} />
-          <Route path="/principles" element={<Principles />} />
+          
           <Route path="/questions" element={<Questions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
